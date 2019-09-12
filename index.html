@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wumble</title>
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <!--Favicons-->
+    <link rel="icon" type="image/png" href="assets/img/logo2.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/img/logo2.png" sizes="32x32">
+
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+<meta property="og:image" content="http://wumble.se/assets/img/og-image.png" />
+
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Wumble" />
+ 
+
+
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+
+    <!--Description-->
+    <meta name="description" content="Vi är Wumble, en innovativ webbyrå specialiserade inom digitalisering. Vi hjälper dig utveckla din hemsida från en idé till en färdig produkt som stärker ditt värdefulla varumärke.">
+    <meta name="keywords" content="Hemsida, hemsidor, skapa hemsida, responsiv hemsida, cms, ny hemsida, programmering, seo ">
+<meta property="og:image"  content="http://wumble.se/assets/img/Wumble_OG.png" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/noframework.waypoints.min.js"></script>
+    <script src="assets/js/animation.js"></script>
+
+    <script>
+        //Javascript function for smoothscroll on page
+        $(document).ready(function ()
+        {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event)
+            {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "")
+                {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate(
+                    {
+                        scrollTop: $(hash).offset().top
+                    }, 800, function ()
+                    {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">Wumble</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="om-oss.html">Om oss</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#what-we-do">Vad vi gör</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Tidigare projekt</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="kontakt.html">Kontakta oss</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 hero-column ">
+                    <img id="hero-image" src="assets/img/hero-illustration.gif" class="animated img-fluid" alt="Responsive image">
+                </div>
+
+                <div class="animated col-lg-6 col-md-12 hero-column ">
+                    <h1 id="hero-title" class="animated">Vi skapar minnesvärda digitala upplevelser</h1>
+                    <div id="hero-text" class="animated">
+                        <p>
+                            Wumble är en innovativ webbyrå specialiserade inom digitalisering. Vi hjälper dig utveckla din hemsida från en idé till en färdig produkt som stärker ditt värdefulla varumärke.
+                        </p>
+                        <div>
+                            <a href="kontakt.html" class=" btn-square">Jobba med oss <i class="fas fa-angle-right"></i></a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- What we do Section -->
+    <div class="what-we-do-container" id="what-we-do">
+        <div class="what-we-do-content">
+            <h1 class="animated" id="what-we-do-content-title">Vi skapar hemsidor med allt ni behöver. Och lite till.</h1>
+
+            <div class="row what-we-do-row">
+                <div id="what-we-do-1" class="animated col-lg-3 col-md-6 col-sm-12 what-we-do-holder">
+                    <i class="far fa-edit"></i>
+
+
+
+                    <h2>Skräddarsydd design</h2>
+                    <p>Vi skräddarsyr hemsidan utifrån era behov. Alltifrån små sidor till stora projekt. </p>
+                </div>
+
+                <div id="what-we-do-2" class="animated col-lg-3 col-md-6 col-sm-12 what-we-do-holder">
+                    <i class="far fa-lightbulb"></i>
+                    <h2>Strategi & Innehåll</h2>
+                    <p>Våra hemsidor är väl genomtänkta med innehåll & funktioner som tar er verksamhet till nästa nivå.</p>
+                </div>
+
+                <div id="what-we-do-3" class="animated col-lg-3 col-md-6 col-sm-12 what-we-do-holder">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Mobilanpassad</h2>
+                    <p>Vi bygger responsiva hemsidor som fungerar på alla enheter, alltifrån mobiler till datorer. </p>
+                </div>
+
+                <div id="what-we-do-4" class="animated col-lg-3 col-md-6 col-sm-12 what-we-do-holder">
+                    <i class="fas fa-cogs"></i>
+                    <h2>Innehållshantering</h2>
+                    <p>Hemsidan levereras tillsammans med ett redigeringsverktyg så att ni enkelt kan uppdatera innehållet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+
+    <div class="portfolio-container" id="portfolio">
+        <div class="portfolio-content">
+            <h1 class="animated portfolio-title">Tidigare projekt</h1>
+            <p class="portfolio-text animated">Våra projekt strävar efter att skapa en minnesvärd digital upplevelse. Vi uppnår detta genom ett välplanerat innehåll samt ett användarvänligt och stilrent gränssnitt.
+            </p>
+            <div class="row portfolio-row">
+
+                <div class="col-lg-6 col-md-12" id="left-portfolio-column">
+
+                    <div class="animated previous-work-container previous-work-1" id="first-right">
+                        <a target="_blank" class="project-link" href="http://recrutio.se/"> <img class="portfolio-image" src="assets/img/recrutio-blue.png" alt="Generic placeholder image" width="100%" height="auto"></a>
+                        <div class="preview-work-description">
+                            <h1>Recrutio</h1>
+                            <p>Landningssida åt Recrutio, ett startup med visionen att skapa arbetsförmedlingen 2.0.</p>
+                            <a target="_blank" class="project-link" href="http://recrutio.se/">Besök sidan <i class="fas fa-angle-right project-link-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="animated previous-work-container previous-work-2">
+                        <img class="portfolio-image" src="assets/img/killergame-2.0.png" alt="Generic placeholder image" width="100%" height="auto">
+                        <div class="preview-work-description">
+                            <h1>Danderyds Gymnasium Killergame </h1>
+                            <p>En webb app som digitaliserar den kända studentleken.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-12" id="right-portfolio-column">
+
+
+                    <div class="animated previous-work-container previous-work-3">
+                        <a class="project-link" target="_blank" href="http://www.rotary-daycare.se/"> <img class="portfolio-image" src="assets/img/rotary-red.png" alt="Generic placeholder image" width="100%" height="auto"></a>
+                        <div class="preview-work-description">
+                            <h1>Rotary</h1>
+                            <p>Hemsida åt organisationens välgöranhetsprojekt i Nepal.</p>
+
+                            <a class="project-link" target="_blank" href="http://www.rotary-daycare.se/">Besök sidan <i class="fas fa-angle-right project-link-icon"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="animated previous-work-container previous-work-4">
+                        <a target="_blank" class="project-link" href="http://torobutik.se/"> <img class="portfolio-image" src="assets/img/toro-2.0.png" alt="Generic placeholder image" width="100%" height="auto"></a>
+                        <div class="preview-work-description">
+                            <h1>Torö Lanthandel</h1>
+                            <p>En hemsida åt lanthandeln där det finns något för alla.</p>
+                            <a target="_blank" class="project-link" href="http://www.torobutik.se/">Besök sidan <i class="fas fa-angle-right project-link-icon"></i></a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Kontakta oss banner-->
+    <div class="kontakta-oss-container">
+        <div class="kontakta-oss-content">
+            <h1 class="animated portfolio-title">Vill du ha en ny hemsida? Kontakta oss.</h1>
+            <p class="animated portfolio-text">Låt oss förverkliga din hemsida tillsammans. Hör av dig så löser vi det.</p>
+            <div class="animated animated-btn">
+                <a href="kontakt.html" class="btn-square">Kontakta oss <i class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-pages-left">
+            <p>Wumble</p>
+            <br>
+            <p class="copyright">© 2019 Wumble</p>
+        </div>
+        <div class="footer-pages-right">
+
+            <a target="_blank" href="https://www.instagram.com/wumble.se/"> <i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/wumble/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
